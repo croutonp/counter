@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+</head>
+<body class>
+    <div class="align-items-center flex-column d-flex container w-75 p-3">
+        <h1 class="d-flex">Counter</h1>
+        <div class="times justify-content-center d-flex">{{ session.count }}</div>
+
+        <div class="buttons d-flex flex">
+        <a href="http://127.0.0.1:5000/click"><button>click</button></a>
+        <a href="http://127.0.0.1:5000/destroy_session"><button>reset</button></a>
+
+    </div>
+        <form class = "align-items-center" action='/form' method='post'>
+            
+            <input type='text' placeholder="count plus" name='name'>
+            
+        </form>
+    </div>
+
+
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
